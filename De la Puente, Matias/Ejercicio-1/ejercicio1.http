@@ -1,0 +1,27 @@
+### Crear un rectangulo
+POST http://localhost:3000/calculos
+Content-Type:application/json
+
+{
+    "ladoA": 10,
+    "ladoB": 20
+}
+
+### Crear un cuadrado
+POST http://localhost:3000/calculos
+Content-Type: application/json
+
+{
+    "ladoA":15,
+    "ladoB": 15
+}
+
+### Prueba de error, datos invalidos
+POST http://localhost:3000/calculos
+Content-Type: application/json
+
+{ "ladoA": -5, "ladoB": 10 }
+
+
+### Consultar todos los calculos
+GET http://localhost:3000/calculos
