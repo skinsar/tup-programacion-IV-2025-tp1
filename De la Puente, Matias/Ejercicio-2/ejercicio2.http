@@ -1,0 +1,46 @@
+### 1 alumno promocionado
+POST http://localhost:3000/alumnos
+Content-Type:application/json
+
+{
+"nombre": "Ana",
+"notas": [8, 9, 10]
+}
+
+### alumno aprobado
+POST http://localhost:3000/alumnos
+Content-Type: application/json
+
+{
+"nombre": "Juan", "notas": [6, 7, 6]
+}
+
+### alumno repetido
+POST http://localhost:3000/alumnos
+Content-Type: application/json
+
+{"nombre": "Ana", "notas": [5, 5, 5]}
+
+### ver todos
+GET http://localhost:3000/alumnos
+
+
+### ver a Juan
+GET http://localhost:3000/alumnos/juan
+
+### cambiar notas de juan
+PUT http://localhost:3000/alumnos/juan
+Content-Type: application/json
+
+{
+"notas": [4, 5, 3]
+}
+
+### chequear a juan de nuevo
+GET http://localhost:3000/alumnos/juan
+
+###borrar a Ana
+DELETE http://localhost:3000/alumnos/ana
+
+### lista final
+GET http://localhost:3000/alumnos
