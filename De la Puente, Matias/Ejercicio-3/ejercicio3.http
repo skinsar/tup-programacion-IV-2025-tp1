@@ -1,0 +1,38 @@
+### primera tarea
+POST http://localhost:3000/tareas
+Content-Type: application/json
+
+{ "nombre": "presentar un proyecto" }
+
+### Segunda tarea
+POST http://localhost:3000/tareas
+Content-Type: application/json
+
+{ "nombre": "Presentarse a una reunion" }
+
+
+### todas las tareas
+GET http://localhost:3000/tareas
+
+
+### presentar un proyecto como completada
+PUT http://localhost:3000/tareas/presentar%20un%20proyecto
+Content-Type: application/json
+
+{ "completada": true }
+
+
+### Filtro de completadas
+GET http://localhost:3000/tareas?completada=true
+
+
+### Filtro de incompletas
+GET http://localhost:3000/tareas?completada=false
+
+
+### Borrar "Presentarse a una reunion"
+DELETE http://localhost:3000/tareas/Presentarse%20a%20una%20reunion
+
+
+### Lista final
+GET http://localhost:3000/tareas
